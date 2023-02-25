@@ -45,7 +45,7 @@ class Interpreter:
         data = ""
         with open(filename, 'r') as f:
             # lines = f.readlines()
-            data = f.read()
+            data = " " + f.read()
 
             for rule in rules:
                 matches = re.finditer(rule[0], data)
